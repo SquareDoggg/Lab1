@@ -558,6 +558,7 @@ int bitCount(int x) {
   x = (x + (x >> 4)) & m4;
   x = x + (x >> 8);
   x = x + (x >> 16);
+  
   return x & 0x3F;
 }
 
